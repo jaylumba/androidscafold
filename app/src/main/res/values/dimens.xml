@@ -1,0 +1,36 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">@dimen/_16sdp</dimen>
+    <dimen name="activity_vertical_margin">@dimen/_16sdp</dimen>
+
+    <!--Font Size-->
+    <dimen name="fontsize_display4">@dimen/_112sdp</dimen>
+    <dimen name="fontsize_display3">@dimen/_56sdp</dimen>
+    <dimen name="fontsize_display2">@dimen/_45sdp</dimen>
+    <dimen name="fontsize_display1">@dimen/_34sdp</dimen>
+    <dimen name="fontsize_headline">@dimen/_24sdp</dimen>
+    <dimen name="fontsize_title">@dimen/_20sdp</dimen>
+    <dimen name="fontsize_subheading">@dimen/_16sdp</dimen>
+    <dimen name="fontsize_body2">@dimen/_14sdp</dimen>
+    <dimen name="fontsize_body1">@dimen/_14sdp</dimen>
+    <dimen name="fontsize_caption">@dimen/_12sdp</dimen>
+    <dimen name="fontsize_microcaption">@dimen/_10sdp</dimen>
+    <dimen name="fontsize_button">@dimen/_14sdp</dimen>
+    <dimen name="fontsize_textfield">@dimen/_14sdp</dimen>
+    <dimen name="fontsize_progress">@dimen/_10sdp</dimen>
+
+    <!--Spacing-->
+    <dimen name="spacing_base_half">@dimen/_4sdp</dimen>
+    <dimen name="spacing_base">@dimen/_8sdp</dimen>
+    <dimen name="spacing_base2x">@dimen/_16sdp</dimen>
+    <dimen name="spacing_base3x">@dimen/_24sdp</dimen>
+    <dimen name="spacing_base4x">@dimen/_32sdp</dimen>
+    <dimen name="spacing_base5x">@dimen/_40sdp</dimen>
+    <dimen name="spacing_base6x">@dimen/_48sdp</dimen>
+    <dimen name="spacing_base7x">@dimen/_56sdp</dimen>
+    <dimen name="spacing_base8x">@dimen/_64sdp</dimen>
+
+    <!--Button-->
+    <dimen name="button_elevation">@dimen/_1sdp</dimen>
+
+</resources>

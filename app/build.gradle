@@ -1,0 +1,100 @@
+apply plugin: 'com.android.application'
+apply plugin: 'android-apt'
+apply plugin: 'org.greenrobot.greendao'
+apply plugin: 'me.tatarka.retrolambda'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.0"
+    defaultConfig {
+        applicationId "com.project.scafold"
+        minSdkVersion 16
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+        dev {
+            applicationId "com.project.scafold.dev"
+            buildConfigField 'String', 'BASE_URL', '"http://10.0.3.2:8080/"'
+        }
+    }
+    dexOptions {
+        javaMaxHeapSize "4g"
+        preDexLibraries = false
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+greendao {
+    targetGenDir 'src/main/java'
+}
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    testCompile 'junit:junit:4.12'
+
+    //SUPPORT
+    compile 'com.android.support:appcompat-v7:25.0.0'
+    compile 'com.android.support:recyclerview-v7:25.0.0'
+    compile 'com.android.support:cardview-v7:25.0.0'
+    compile 'com.android.support:design:25.0.0'
+
+    //SCALABLE UNIT
+    compile 'com.intuit.sdp:sdp-android:1.0.3'
+
+    //FONT
+    compile 'uk.co.chrisjenx:calligraphy:2.2.0'
+
+    //BUTTERKNIFE
+    compile 'com.jakewharton:butterknife:8.4.0'
+    apt 'com.jakewharton:butterknife-compiler:8.4.0'
+
+    //EVENTBUS
+    compile 'org.greenrobot:eventbus:3.0.0'
+
+    //RETROFIT
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
+
+    //RETROFIT LOGGER
+    compile 'com.squareup.okhttp3:logging-interceptor:3.3.1'
+
+    //RXANDROID
+    compile 'io.reactivex:rxandroid:1.0.1'
+
+    //GREENDAO
+    compile 'org.greenrobot:greendao:3.2.0'
+
+    //PICASSO
+    compile 'com.jakewharton.picasso:picasso2-okhttp3-downloader:1.0.2'
+
+    //TIME
+    compile 'org.ocpsoft.prettytime:prettytime:4.0.1.Final'
+
+    //ANIMATION
+    compile 'com.eftimoff:androidplayer:1.0.3@aar'
+    compile 'com.nineoldandroids:library:2.4.0'
+
+    /*********************************CUSTOM WIDGETS*********************************/
+    //FANCY BUTTON
+    compile 'com.github.medyo:fancybuttons:1.8.2'
+    //MATERIAL DIALOG
+    compile 'com.afollestad.material-dialogs:core:0.9.0.2'
+    //PROGRESS LAYOUT
+    compile 'com.github.nguyenhoanglam:ProgressLayout:1.0.1'
+    //LOADING
+    compile 'com.github.ybq:Android-SpinKit:1.1.0'
+}

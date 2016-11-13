@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Scafold</string>
+    <!--DIALOG-->
+    <string name="dialog.warn.networkerror">Network error. Please check your internet connection.</string>
+    <string name="dialog.warn.completerequiredfields">Please complete required fields.</string>
+    <string name="dialog.message.pleasewait">Please wait...</string>
+    <string name="dialog.confirm.logout">Are you sure you want to logout?</string>
+    <string name="dialog.button.logout">Log Out</string>
+    <string name="dialog.button.cancel">Cancel</string>
+    <string name="dialog.button.close">Close</string>
+</resources>
